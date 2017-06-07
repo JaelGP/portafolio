@@ -1,0 +1,501 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Semibold";
+    src: url(../fonts/OpenSans-Semibold.ttf);
+}
+
+*{
+	font-family: "OpenSans-Regular";
+}
+
+body{
+	background: #eee !important;
+	margin: 0px;
+}
+
+nav{
+	background: url(../images/bg-nav.png)repeat-y;
+	background-size: 100%;
+	color: #fff;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+nav li{
+	list-style: none;
+	display: inline-block;
+	width: auto;
+	padding: 15px 10px;
+	text-align: center;
+	font-size: 12px;
+	border-bottom: 1px solid transparent;
+	letter-spacing: 3px;
+}
+nav li:hover{
+	border-bottom: 1px solid #fff;
+	cursor: pointer;
+}
+nav li a{
+	text-decoration: none;
+	color: #fff;
+}
+nav ul{
+	width: 1000px;
+	max-width: 90%;
+	position: relative;
+	margin: 0 auto;
+	text-align: right;
+	padding: 0px;
+}
+.banner{
+	width: 100%;
+	background: url(../images/banner-index.png)no-repeat;
+	background-size: 100%;
+	padding: 100px 0px 50px;
+	text-align: center;
+	color: #fff;
+	max-height: 1100px;
+}
+.banner .perfil{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	margin-bottom: 20px;
+}
+.banner h1{
+	letter-spacing: 5px;
+	font-size: 30px;
+	font-family: "OpenSans-Light" !important;
+	font-weight: lighter;
+	margin: 5px 0px;
+}
+.banner h2{
+	letter-spacing: 6px;
+	font-size: 24px;
+	font-family: "OpenSans-Light" !important;
+	font-weight: lighter;
+	margin: 0px;
+}
+.content, #portafolio, #experiencia{
+	width: 900px;
+	max-width: 90%;
+	position: relative;
+	margin: 0 auto;
+	background: #eee;
+	padding: 25px;
+}
+#content-conocimientos{
+	width: 1000px;
+	max-width: 100%;
+	position: relative;
+	margin: 0 auto;
+	background: #eee;
+	padding: 0px;
+}
+.conocimientos{
+	width: 950px;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+    background: #eee;
+    padding: 0px;
+}
+#content-yo{
+	width: 1000px;
+	max-width: 90%;
+	position: relative;
+	margin: 0px auto 0px;
+	background: transparent;
+	padding: 0px 0px 50px;
+	text-align: center;
+}
+.titulo-yo{
+	background: #e81562;
+	border: 1px solid #e81562;
+	text-align: left;
+	color: #fff;
+	padding: -25px 0px 25px;
+	margin-top: -25px;
+	margin-bottom: 25px;
+}
+.titulo-yo h2{
+	letter-spacing: 4px;
+	font-size: 18px;
+	font-family: "OpenSans-Light" !important;
+	font-weight: lighter;
+	width: 95%;
+	display: block;
+	margin:0 auto;
+	padding: 25px;
+}
+.titulo-yo h2::before{
+	position: absolute;
+	content: '';
+	width:0px;
+    height:0px;
+    border-style: solid;
+    border-width: 20px;
+    border-bottom-width:0px;
+    border-color: #e81562 transparent transparent transparent;
+    margin-top: 45px;
+    margin-left: -15px;
+}
+.text-yo{
+	width: 100%;
+	background: #fff;
+	display: block;
+	margin: 0px auto;
+	padding: 25px 0px;
+	text-align: justify;
+	color: #666;
+	box-shadow: 0px 0px 3px 0px #666;
+	letter-spacing: 0px !important;
+	font-size: 14px;
+}
+.text-yo p{
+	line-height: 24px;
+	width: 95%;
+	display: block;
+	margin:0 auto;
+}
+.text-yo b{
+	color: #e81562;
+}
+#content-conocimientos h2, #contacto h2 {
+	letter-spacing: 4px;
+	font-size: 18px;
+	font-family: "OpenSans-Regular" !important;
+	font-weight: normal;
+	padding: 0px;
+	display: block;
+	margin: 0px;
+	color: #e81562;
+}
+#contacto h2{
+	color: #fff;
+}
+.slider{
+	list-style: none;
+	margin-bottom: 50px;
+}
+.slider img{
+	width: 100%;
+
+}
+.text-conocimientos{
+	color: #666;
+	margin-bottom: 50px;
+	font-size: 14px;
+}
+.text-conocimientos b{
+	color: #e81562;
+}
+#portafolio{
+	width: 100%;
+	max-width: 100%;
+	position: relative;
+	margin: 0 auto 5px;
+	background: url(../images/bg-portafolio-left.png)no-repeat top left;
+	background-size: 30%;
+	background-color: #3d0e57;
+	padding: 25px 0px;
+}
+#portafolio::before{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: url(../images/bg-portafolio-right.png)no-repeat bottom right;
+	background-size: 30%;
+	padding: 0px;
+	margin: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+.grid{
+	width: 1000px;
+	max-width: 90%;
+	background: transparent;
+	display: block;
+	margin: 0px auto;
+	padding: 25px;
+	text-align: justify;
+	color: #fff;
+	letter-spacing: 0px !important;
+	font-size: 14px;
+	position: relative;
+	z-index: 998;
+}
+.grid h2{
+	letter-spacing: 4px;
+	font-size: 18px;
+	font-family: "OpenSans-Regular" !important;
+	font-weight: normal;
+	padding: 0px 0px 0px 25px;
+	display: block;
+	margin: 0px;
+	color: #fff;
+}
+.grid ul{
+	text-align: left;
+	padding: 0px;
+}
+.grid li{
+	list-style: none;
+	width: 33%;
+	display: inline-block;
+	margin:0px;
+}
+.grid li img{
+	width: 100%;
+	display: block;
+}
+.grid li span{
+	width: 100%;
+	margin: 0px;
+	display: block;
+	padding: 15px 0px;
+	text-align: center;
+}
+#contacto{
+	width: 100%;
+	max-width: 100%;
+	position: relative;
+	margin: 0 auto 0px;
+	background-color: #3d0e57;
+	padding: 25px 0px;
+	background: url(../images/bg-contacto.png)repeat-y;
+	background-size: 100%;
+	color: #fff;
+}
+.form-contacto{
+	width: 940px;
+	max-width: 90%;
+	background: transparent;
+	display: block;
+	margin: 0px auto;
+	padding: 25px 0px;
+	text-align: justify;
+	color: #fff;
+	letter-spacing: 0px !important;
+	font-size: 14px;
+}
+.form-contacto div{
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+}
+.form-contacto div input, .form-contacto div textarea{
+	width: 100%;
+	padding: 10px;
+	margin:5px 0px;
+}
+.form-contacto div input[type="sumbit"]{
+	width: 100px;
+	background: #e81562;
+	color: #fff;
+	text-align: center;
+	border: 0px;
+	font-size: 14px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	float: right;
+}
+.form-contacto div input[type="sumbit"]:hover{
+	background: #3d0e57;
+	cursor: pointer;
+}
+.form-contacto ul{
+	padding: 0px;
+}
+.form-contacto li{
+	list-style: none;
+	padding: 0px;
+	margin: 10px 0px;
+	letter-spacing: 3px;
+}
+#footer{
+	background: #101010;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px 0px;
+	letter-spacing: 3px;
+	font-family: "OpenSans-Light";
+	font-weight: lighter;
+}
+#experiencia{
+	width: 950px;
+	background: #fff;
+	box-shadow: 0px 0px 3px 0px #666;
+	letter-spacing: 0px !important;
+	font-size: 14px;
+	margin-top: -5px;
+}
+#experiencia .titulo-yo{
+	margin: -25px -25px 35px;
+}
+#experiencia ul{
+	padding: 0px;
+	margin-left: 10px;
+}
+#experiencia li{
+	list-style: none;
+}
+#experiencia h3{
+	color: #3d0e57;
+	font-weight: lighter;
+	border-bottom: 1px dotted #ccc;
+	padding-bottom: 10px;
+}
+#experiencia p{
+	color: #666;
+}
+#experiencia b{
+	color: #e81562;
+}
+
+
+@media screen and (max-width:767px){
+#content-yo, #experiencia{
+		width: 100%;
+		max-width: 100% !important;
+		box-shadow: none;
+		padding: 0px;
+	}
+nav ul{
+	width: 100%;
+	max-width: 100% !important;
+}
+nav{
+	position: initial;
+}
+nav li{
+	width: 29%;
+}
+#experiencia .titulo-yo{
+	margin: -25px 0px 35px;
+}
+#experiencia ul{
+	padding-left: 25px;
+}
+.titulo-yo h2{
+	padding: 25px 0px 25px 25px;
+}
+.banner{
+	padding: 30px 0px 30px;
+}
+.banner h1{
+	font-size: 23px;
+}
+.banner h2{
+	font-size: 18px;
+}
+.text-conocimientos{
+	padding: 0px 25px;
+	margin-top: 75px;
+}
+#content-conocimientos h2, #contacto h2{
+	padding-left: 25px;
+	margin-top: 25px;
+}
+#slider{
+	width: auto !important;
+    min-height: 200px;
+    display: block;
+    height: auto !important;
+    box-shadow: none;
+    background: transparent;
+}
+#slider .navBulletsWrapper{
+	top: 210px;
+}
+}
+@media screen and (max-width:510px){
+nav ul, nav{
+	padding: 0px;
+}
+nav li{
+	width: 100%;
+	margin: 0px;
+	padding: 0px !important;
+	
+}
+nav li a{
+	display: block;
+	width: 100%;
+	margin: 0px;
+	padding: 15px 0px;
+}
+.grid{
+	width: 100%;
+	padding: 0px;
+}
+.grid li{
+	width: 100%;
+}
+.text-yo p{
+	width: 90%;
+}
+.form-contacto div{
+	width: 95%;
+}
+#content-conocimientos{
+	width: 100%;
+}
+.banner .perfil{
+	width: 150px;
+	height: 150px;
+}
+.banner h1{
+	font-size: 18px;
+}
+.banner h2{
+	font-size: 14px;
+}
+.banner{
+	background-size: 100% 100%;
+}
+.titulo-yo h2{
+	width: 90%;
+	padding: 25px 0px;
+}
+#footer{
+	font-size: 12px;
+    letter-spacing: 1px;
+}
+.form-contacto div input, .form-contacto div textarea{
+	padding: 10px 0px 10px 10px;
+}
+.form-contacto li{
+	font-size: 14px;
+	letter-spacing: 1px;
+    text-align: left;
+}
+.text-yo p, .text-conocimientos, #experiencia p{
+	font-size: 13px;
+}
+#slider{
+	width: auto !important;
+    min-height: 100px;
+    display: block;
+    height: auto !important;
+}
+#slider .navBulletsWrapper{
+	top: 110px;
+}
+}
