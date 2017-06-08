@@ -1,9 +1,9 @@
 <?php
-if(isset($_POST['email'])) {
+if(isset($_POST['formulariojael'])) {
 
 // Debes editar las próximas dos líneas de código de acuerdo con tus preferencias
 $email_to = "jaelgonzalezpina@gmail.com";
-$email_subject = "Mensaje desde Portadolio Jael";
+$email_subject = "Mensaje desde Portafolio Jael";
 
 // Aquí se deberían validar los datos ingresados por el usuario
 if(!isset($_POST['nombre']) ||
